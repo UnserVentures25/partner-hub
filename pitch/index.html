@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<title>Partner Hub für Team No Limits</title>
+<meta name="description" content="Der Partner Hub für Team No Limits: Tagesansicht, Kontaktbuch, persönliche Partnerseite, Startklar, Mentorinnen-Ansicht und Hub.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&family=Bad+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/pitch.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></symbol>
+  <symbol id="i-start" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+  <symbol id="i-grip" viewBox="0 0 24 24"><circle cx="9" cy="6" r="1"/><circle cx="15" cy="6" r="1"/><circle cx="9" cy="12" r="1"/><circle cx="15" cy="12" r="1"/><circle cx="9" cy="18" r="1"/><circle cx="15" cy="18" r="1"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"/></symbol>
+  <symbol id="i-brief" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-present" viewBox="0 0 24 24"><path d="M2 3h20M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3M7 21l5-5 5 5"/></symbol>
+  <symbol id="i-print" viewBox="0 0 24 24"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#start"><b>PARTNER HUB</b><span>für Team No Limits</span></a>
+    <ul>
+      <li><a href="#befund">Befund</a></li>
+      <li><a href="#aufbau">Bildschirme</a></li>
+      <li><a href="#kreislauf">So funktioniert's</a></li>
+      <li><a href="#beleg">Beleg</a></li>
+      <li><a href="#investition">Investition</a></li>
+      <li><a href="angebot.html">Angebot</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+<!-- 01 Hero -->
+<div class="wrap" id="start" data-slide>
+  <div class="hero">
+    <div class="copy">
+      <span class="plate label">Fleiß schlägt Talent</span>
+      <h1>Jeden Morgen wissen, was heute dran ist.</h1>
+      <p class="lede">Der Partner Hub zeigt jeder Partnerin ihre nächsten Schritte und bringt Interessenten von selbst ins Kontaktbuch. Ergänzend zu dem, was ihr schon habt. Nicht als Ersatz.</p>
+      <div class="btnrow">
+        <a class="btn" href="#aufbau">Die sechs Bildschirme</a>
+        <a class="btn ghost" href="angebot.html">Das Angebot</a>
+      </div>
+      <div class="to">
+        <span>Für <b>Sabine &amp; Markus Bommel</b> · <b>Mariola &amp; Christian Heider</b></span>
+        <span>Von Yves Unser · Stand 18.10.2026</span>
+      </div>
+    </div>
+    <div class="stage3d" aria-label="Zwei Bildschirme des Partner Hub">
+      <span class="corner label">So sieht es aus</span>
+      <div class="pair">
+        <div class="phone web back"><div class="screen">
+          <div class="sb"><span>9:41</span><span class="notch"></span><span class="ic"><i></i></span></div>
+          <div class="hero-img"><span class="avatar"></span></div>
+          <div class="wbody">
+            <span class="sec">Nicole · Team No Limits</span>
+            <h4>Meine Geschichte, und warum ich nebenher angefangen habe.</h4>
+            <div class="video"><svg class="ico"><use href="#i-play"/></svg></div>
+            <div class="fb">
+              <b>Wie interessant findest du das?</b>
+              <div class="scale"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i class="on">7</i><i>8</i><i>9</i><i>10</i></div>
+              <span class="input">Deine Fragen …</span>
+              <span class="pbtn dark full">Absenden</span>
+            </div>
+          </div>
+        </div></div>
+        <div class="phone front"><div class="screen">
+          <div class="sb"><span>9:41</span><span class="notch"></span><span class="ic"><i></i></span></div>
+          <div class="app">
+            <div class="greet">Guten Morgen, Nicole</div>
+            <p class="ctx">Du bist bei Startklar, Schritt 4 von 10.</p>
+            <p class="sec">Deine nächsten Schritte</p>
+            <div class="card"><span class="tag"><span class="dot warn"></span>Überfällig</span><p class="txt">Sandra M. wartet seit 6 Tagen auf deine Antwort.</p><div class="act"><span class="pbtn">Nachfassen</span><span class="plink">Später</span></div></div>
+            <div class="card"><span class="tag"><span class="dot"></span>Neue Rückmeldung</span><p class="txt">Maria K. hat mit 7 von 10 bewertet und fragt nach dem Zeitaufwand.</p><div class="act"><span class="pbtn">Antworten</span><span class="plink">Später</span></div></div>
+            <div class="card"><span class="tag"><span class="dot"></span>Startklar</span><p class="txt">Schritt 4: Deine persönliche Produktreise.</p><div class="act"><span class="pbtn">Weiter</span></div></div>
+            <p class="week">Diese Woche · 3 neue Kontakte · 12× Link geöffnet</p>
+            <div class="tabs"><span class="on"><svg class="ico"><use href="#i-sun"/></svg>Heute</span><span><svg class="ico"><use href="#i-users"/></svg>Kontakte</span><span><svg class="ico"><use href="#i-link"/></svg>Mein Link</span><span><svg class="ico"><use href="#i-start"/></svg>Startklar</span><span><svg class="ico"><use href="#i-more"/></svg>Mehr</span></div>
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+  <div class="facts rv">
+    <div><span class="n" data-count="129">129</span><span class="t">Seiten auf teamnolimits.de. Alles ist da, aber niemand findet es.</span></div>
+    <div><span class="n" data-count="3">3</span><span class="t">Onboarding-Phasen mit festen Namen: Startklar, Deine Einarbeitung, Werde Profi.</span></div>
+    <div><span class="n" data-count="46">46</span><span class="t">Lektionen im Tutor LMS. Das Lernsystem läuft bereits.</span></div>
+    <div><span class="n" data-count="0">0</span><span class="t">Kontaktsystem. Gespräche und Nachfass-Termine leben in WhatsApp und im Gedächtnis.</span></div>
+  </div>
+</div>
+
+<!-- 02 Befund -->
+<section id="befund" data-slide>
+  <div class="wrap">
+    <div class="sechead rv">
+      <span class="label">Was wir gefunden haben</span>
+      <div>
+        <h2>Ihr habt kein Content-Problem. Ihr habt ein Orientierungsproblem.</h2>
+        <p class="lede">Wir haben teamnolimits.de vollständig analysiert: Seitenstruktur, Technik, Inhalte. Der wichtigste Fund lag aber gar nicht auf eurer Website.</p>
+      </div>
+    </div>
+    <div class="finding rv">
+      <div>
+        <span class="label muted">Der Interessenten-Funnel auf boards.com</span>
+        <ol>
+          <li>Story, Videos und das Konzept mit 60 bis 90 Minuten am Tag</li>
+          <li>Die Frage: „Wie interessant findest du es von 1 bis 10?“</li>
+          <li>Registrierungslink, WhatsApp, Forever-Shop</li>
+          <li>Faktencheck und vier Erfolgsgeschichten</li>
+          <li class="gap">Rückkanal: keiner. Die Partnerin erfährt nie, wer die Seite geöffnet hat.</li>
+        </ol>
+      </div>
+      <div class="q">
+        <blockquote>Der Verkaufsprozess läuft schon. Nur in einem fremden Tool und ohne Rückkanal.</blockquote>
+        <span class="label">Fund · 17 Seiten · Anke &amp; Sven</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 Ergänzen statt ersetzen -->
+<section class="soft" id="haltung" data-slide>
+  <div class="wrap">
+    <div class="sechead rv">
+      <span class="label">Die Entscheidung</span>
+      <div>
+        <h2>Ergänzen statt ersetzen.</h2>
+        <p class="lede">Alles, was bei euch schon läuft, bleibt, wo es ist. Der Partner Hub baut nur das, was heute fehlt, und verlinkt den Rest.</p>
+      </div>
+    </div>
+    <div class="split rv" style="background:var(--paper)">
+      <div>
+        <span class="label muted">Bleibt bei euch im WordPress</span>
+        <h3>Wird im Hub verlinkt</h3>
+        <ul>
+          <li>Academy und Kurse im Tutor LMS</li>
+          <li>Vital Coach und Network Marketing Experte</li>
+          <li>Teamkalender und Ticketverkauf</li>
+          <li>Werbeartikel-Shop</li>
+          <li>Präsentationen und Drucksachen</li>
+          <li>Managersuche und Telegram-Gruppen</li>
+        </ul>
+        <p class="foot">Kein Nachbau, keine doppelte Pflege.</p>
+      </div>
+      <div class="new">
+        <span class="label muted">Wird neu gebaut</span>
+        <h3>Genau die Lücke</h3>
+        <ul>
+          <li>Tagesansicht mit den nächsten Schritten</li>
+          <li>Kontaktbuch mit Nachfass-Terminen</li>
+          <li>Persönliche Partnerseite zum Teilen</li>
+          <li>Onboarding mit sichtbarem Fortschritt</li>
+          <li>Mentorinnen-Ansicht: wer braucht Hilfe</li>
+          <li>Datenschutz: Export und Löschung</li>
+        </ul>
+        <p class="foot">Nicht mehr, nicht weniger.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 Aufbau -->
+<section id="aufbau" data-slide>
+  <div class="wrap">
+    <div class="sechead rv">
+      <span class="label">Der Aufbau</span>
+      <div>
+        <h2>Fünf Bereiche für den Alltag. Dazu der Hub, der auf alles Bestehende zeigt.</h2>
+        <p class="lede">Eure Partnerinnen arbeiten nebenberuflich, auf dem Handy, nach eurem Konzept von 60 bis 90 Minuten am Tag. Vierzehn Module wären in dieser Zeit nicht bedienbar.</p>
+      </div>
+    </div>
+    <div class="rv">
+      <div class="areas">
+        <a href="#s-heute"><span class="k">01 · Täglich</span><b>Heute</b><span>Höchstens fünf Schritte. Kein Umsatz, keine Rangliste.</span></a>
+        <a href="#s-kontakte"><span class="k">02 · Gedächtnis</span><b>Kontakte</b><span>Wer, wann zuletzt, was als Nächstes.</span></a>
+        <a href="#s-link" class="core"><span class="k">03 · Herzstück</span><b>Mein Link</b><span>Ersetzt boards.com und meldet zurück.</span></a>
+        <a href="#s-startklar"><span class="k">04 · Einstieg</span><b>Startklar</b><span>Eure drei Phasen. Immer nur ein Schritt offen.</span></a>
+        <a href="#s-team"><span class="k">05 · Führung</span><b>Team</b><span>Wer feststeckt, ohne fremde Kontakte zu sehen.</span></a>
+      </div>
+      <a class="hubline" href="#s-hub"><span class="label muted">06 · Verbindung</span><b>Hub</b><span>Kacheln zu Academy, Kalender, Präsentationen und Shop. Ein Tippen statt Suchen.</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Bildschirme: seitlicher Slider -->
+<section class="hs soft" id="bildschirme">
+  <div class="hs-sticky">
+    <div class="wrap hs-head">
+      <div><span class="label muted">Die Bildschirme</span><h2 class="hs-title">Sechs Bildschirme, je eine Aufgabe.</h2></div>
+      <div class="hs-nav">
+        <div class="hs-tabs" role="tablist"><button type="button" data-go="0">Heute</button><button type="button" data-go="1">Kontakte</button><button type="button" data-go="2">Mein Link</button><button type="button" data-go="3">Startklar</button><button type="button" data-go="4">Team</button><button type="button" data-go="5">Hub</button></div>
+        <div class="hs-progress"><span class="hs-count label">01 / 06</span><i><b></b></i></div>
+      </div>
+    </div>
+    <div class="hs-viewport">
+      <div class="hs-track">
+      <article class="scard" id="s-heute" data-slide>
+        <div class="body">
+          <div class="num"><b>01</b><em>Heute · täglich, unter drei Minuten</em></div>
+          <h3>Was die Partnerin morgens als Erstes sieht</h3>
+          <p>Oben ein Satz, wo sie bei Startklar steht. Darunter höchstens fünf Karten: überfällige Rückmeldungen zuerst, dann neue Interessenten, dann der nächste Onboarding-Schritt. Jede Karte hat genau einen Knopf. Nie auf dieser Seite: Umsatz, Rang, Diagramme.</p>
+          <div class="say">
+            <span class="label">Im Termin sage ich</span>
+            <ul><li>„Das ist die Seite, die eure Partnerinnen jeden Morgen öffnen. Sonst nichts.“</li><li>„Kein Dashboard. Fünf Sätze, fünf Knöpfe, fertig.“</li><li>„Die Sprache ist eure: Startklar, Schritt 4 von 10. Nicht Lead und Pipeline.“</li></ul>
+          </div>
+        </div>
+        <div class="stage"><div class="phone "><div class="screen"><div class="sb"><span>9:41</span><span class="notch"></span><span class="ic"><i></i></span></div><div class="app">
+  <div class="top"><div class="greet">Guten Morgen, Nicole</div><svg class="ico"><use href="#i-bell"/></svg></div>
+  <p class="ctx">Du bist bei Startklar, Schritt 4 von 10.</p>
+  <p class="sec">Deine nächsten Schritte</p>
+  <div class="card st"><span class="tag"><span class="dot warn"></span>Überfällig</span><p class="txt">Sandra M. wartet seit 6 Tagen auf deine Antwort.</p><div class="act"><span class="pbtn">Nachfassen</span><span class="plink">Später</span></div></div>
+  <div class="card st"><span class="tag"><span class="dot"></span>Neue Rückmeldung</span><p class="txt">Maria K. hat mit 7 von 10 bewertet und fragt nach dem Zeitaufwand.</p><div class="act"><span class="pbtn">Antworten</span><span class="plink">Später</span></div></div>
+  <div class="card st"><span class="tag"><span class="dot"></span>Startklar</span><p class="txt">Schritt 4: Deine persönliche Produktreise.</p><div class="act"><span class="pbtn">Weiter</span></div></div>
+  <p class="week st">Diese Woche · 3 neue Kontakte · 12× Link geöffnet</p>
+  <div class="tabs"><span class="on"><svg class="ico"><use href="#i-sun"/></svg>Heute</span><span><svg class="ico"><use href="#i-users"/></svg>Kontakte</span><span><svg class="ico"><use href="#i-link"/></svg>Mein Link</span><span><svg class="ico"><use href="#i-start"/></svg>Startklar</span><span><svg class="ico"><use href="#i-more"/></svg>Mehr</span></div></div></div></div></div>
+      </article>
+      <article class="scard" id="s-kontakte" data-slide>
+        <div class="body">
+          <div class="num"><b>02</b><em>Kontakte · das Gedächtnis</em></div>
+          <h3>Wer, wann zuletzt, was als Nächstes</h3>
+          <p>Ein Kontakt braucht nur einen Namen. Alles andere ist optional: Kanal, Quelle, Interesse von 1 bis 10, nächster Schritt mit Datum. Der Filter Überfällig ist immer sichtbar. Wer seit Tagen wartet, bekommt einen Punkt, keine rote Fläche.</p>
+          <div class="say">
+            <span class="label">Im Termin sage ich</span>
+            <ul><li>„Heute steht das alles in WhatsApp-Verläufen. Hier steht es an einer Stelle.“</li><li>„Das wichtigste Feld ist der nächste Schritt. Daraus wird die Aufgabe unter Heute.“</li><li>„Abtippen muss niemand. Die meisten Kontakte kommen über den Link von selbst.“</li></ul>
+          </div>
+        </div>
+        <div class="stage"><div class="phone "><div class="screen"><div class="sb"><span>9:41</span><span class="notch"></span><span class="ic"><i></i></span></div><div class="app">
+  <div class="top"><span class="ttl">Kontakte</span><span class="pbtn line"><svg class="ico"><use href="#i-plus"/></svg>Neu</span></div>
+  <div class="search"><svg class="ico"><use href="#i-search"/></svg>Name oder Notiz suchen</div>
+  <div class="chips"><span class="chip">Alle 14</span><span class="chip on pulse">Überfällig 2</span><span class="chip">Neu 3</span></div>
+  <div class="clist">
+    <div class="crow st"><span class="dot warn"></span><div><b>Sandra M.</b><small>vor 6 Tagen · Fragen zum Start</small></div><span class="st2">Infos geteilt</span></div>
+    <div class="crow st"><span class="dot warn"></span><div><b>Jana P.</b><small>vor 9 Tagen · Termin vorschlagen</small></div><span class="st2">Angesprochen</span></div>
+    <div class="crow st"><span class="dot"></span><div><b>Maria K.</b><small>gestern · 7 von 10 · Mein Link</small></div><span class="st2">Feedback</span></div>
+    <div class="crow st"><span class="dot"></span><div><b>Tanja R.</b><small>heute · über Mein Link</small></div><span class="st2">Neu</span></div>
+    <div class="crow st"><span class="dot ok"></span><div><b>Birgit L.</b><small>vor 2 Tagen · Nachbestellung</small></div><span class="st2">Kundin</span></div>
+    <div class="crow st"><span class="dot idle"></span><div><b>Kerstin W.</b><small>vor 3 Wochen · im Frühjahr</small></div><span class="st2">Später</span></div>
+  </div>
+  <div class="tabs"><span><svg class="ico"><use href="#i-sun"/></svg>Heute</span><span class="on"><svg class="ico"><use href="#i-users"/></svg>Kontakte</span><span><svg class="ico"><use href="#i-link"/></svg>Mein Link</span><span><svg class="ico"><use href="#i-start"/></svg>Startklar</span><span><svg class="ico"><use href="#i-more"/></svg>Mehr</span></div></div></div></div></div>
+      </article>
+      <article class="scard core wide" id="s-link" data-slide>
+        <div class="body">
+          <div class="num"><b>03</b><em>Mein Link · das Herzstück</em></div>
+          <h3>Die persönliche Seite zum Teilen, mit Rückkanal</h3>
+          <p>Jede Partnerin hat eine eigene Seite: ihre Geschichte, eure Videos, die Frage nach 1 bis 10. Bausteine schaltet sie an und aus, die freigegebenen Texte pflegt nur die Teamleitung. Gibt die Interessentin ihre Rückmeldung ab, entsteht der Kontakt automatisch.</p>
+          <div class="say">
+            <span class="label">Im Termin sage ich</span>
+            <ul><li>„Das macht ihr heute schon auf boards.com. Hier erfährt die Partnerin, wer die Seite geöffnet hat.“</li><li>„Die Frage nach 1 bis 10 ist eure. Wir haben sie nur angeschlossen.“</li><li>„Keine IP, kein Cookie. Gezählt wird nur, wie oft und wie weit gelesen wurde.“</li></ul>
+          </div>
+        </div>
+        <div class="stage"><div class="duo"><figure><div class="phone l"><div class="screen"><div class="sb"><span>9:41</span><span class="notch"></span><span class="ic"><i></i></span></div><div class="app">
+  <div class="top"><span class="ttl">Mein Link</span></div>
+  <div class="urlbar st"><svg class="ico"><use href="#i-link"/></svg><span>teamnolimits.de/p/nicole</span><svg class="ico"><use href="#i-copy"/></svg></div>
+  <span class="pbtn full st"><svg class="ico"><use href="#i-msg"/></svg>Über WhatsApp teilen</span>
+  <p class="sec">Diese Woche</p>
+  <div class="stats st"><div><b>12</b><small>geöffnet</small></div><div><b>4</b><small>bis zum Ende</small></div><div><b>2</b><small>Rückmeldungen</small></div></div>
+  <p class="sec">Bausteine</p>
+  <div class="blocks st">
+    <div class="blk"><svg class="ico grip"><use href="#i-grip"/></svg><span>Meine Geschichte<br><small>frei editierbar</small></span><i class="tog"></i></div>
+    <div class="blk"><svg class="ico grip"><use href="#i-grip"/></svg><span>Video: Unser Konzept</span><i class="tog"></i></div>
+    <div class="blk"><svg class="ico grip"><use href="#i-grip"/></svg><span>Faktencheck</span><i class="tog"></i></div>
+    <div class="blk"><svg class="ico grip"><use href="#i-grip"/></svg><span>Erfolgsgeschichten</span><i class="tog off flip"></i></div>
+    <div class="blk"><svg class="ico grip"><use href="#i-lock"/></svg><span>Deine Rückmeldung<br><small>Pflicht</small></span><i class="tog lock"></i></div>
+  </div>
+  <div class="tabs"><span><svg class="ico"><use href="#i-sun"/></svg>Heute</span><span><svg class="ico"><use href="#i-users"/></svg>Kontakte</span><span class="on"><svg class="ico"><use href="#i-link"/></svg>Mein Link</span><span><svg class="ico"><use href="#i-start"/></svg>Startklar</span><span><svg class="ico"><use href="#i-more"/></svg>Mehr</span></div></div></div></div><figcaption class="label">Partnerin</figcaption></figure><figure><div class="phone web r"><div class="screen"><div class="sb"><span>9:41</span><span class="notch"></span><span class="ic"><i></i></span></div><div class="hero-img"><span class="avatar"></span></div>
+  <div class="wbody">
+    <span class="sec">Nicole · Team No Limits</span>
+    <h4>Meine Geschichte, und warum ich nebenher angefangen habe.</h4>
+    <div class="video"><svg class="ico"><use href="#i-play"/></svg></div>
+    <div class="fb st">
+      <b>Wie interessant findest du das?</b>
+      <small style="color:var(--p-soft);font-size:11px">1 = gar nicht · 10 = sehr</small>
+      <div class="scale"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i class="on">7</i><i>8</i><i>9</i><i>10</i></div>
+      <span class="input">Deine Fragen …</span>
+      <span class="pbtn dark full">Absenden</span>
+    </div>
+    <p class="legal">Keine IP-Speicherung, keine Cookies. Persönliche Seite einer selbstständigen Vertriebspartnerin, keine offizielle Seite von Forever Living Products.</p>
+  </div></div></div><figcaption class="label">Interessentin</figcaption></figure></div></div>
+      </article>
+      <article class="scard" id="s-startklar" data-slide>
+        <div class="body">
+          <div class="num"><b>04</b><em>Startklar · der Einstieg</em></div>
+          <h3>Eure drei Phasen. Immer nur ein Schritt offen.</h3>
+          <p>Startklar mit zehn Schritten, Deine Einarbeitung mit fünf, Werde Profi mit drei. Die Partnerin sieht nur den aktuellen Schritt: ein Satz Zweck, eine Aufgabe, ein Link in eure Academy. Die Schritte pflegt die Teamleitung selbst, ohne Programmierer.</p>
+          <div class="say">
+            <span class="label">Im Termin sage ich</span>
+            <ul><li>„Die Namen und Inhalte sind eure. Wir zeigen sie nur Schritt für Schritt.“</li><li>„Erledigte Schritte klappen zu, die nächsten sind nur eine Zahl.“</li><li>„Hängt jemand sieben Tage am selben Schritt, sieht es die Mentorin.“</li></ul>
+          </div>
+        </div>
+        <div class="stage"><div class="phone "><div class="screen"><div class="sb"><span>9:41</span><span class="notch"></span><span class="ic"><i></i></span></div><div class="app">
+  <div class="top"><span class="ttl">Startklar</span></div>
+  <p class="ctx">Schritt 4 von 10 · noch 6 Schritte</p>
+  <div class="progress"><i class="done"></i><i class="done"></i><i class="done"></i><i class="now"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div>
+    <div class="donerow st"><svg class="ico"><use href="#i-check"/></svg>1 · Portal eingerichtet</div>
+    <div class="donerow st"><svg class="ico"><use href="#i-check"/></svg>2 · Teamgruppen beigetreten</div>
+    <div class="donerow st"><svg class="ico"><use href="#i-check"/></svg>3 · Teamkalender und Zoom</div>
+  </div>
+  <div class="stepcard st pop">
+    <span class="tag"><span class="dot"></span>Schritt 4 · jetzt dran</span>
+    <h5>Deine persönliche Produktreise</h5>
+    <div class="task">Aufgabe: Notiere drei Produkte, die du selbst ausprobieren möchtest.</div>
+    <span class="deeplink">Video in der Academy ansehen <svg class="ico"><use href="#i-chev"/></svg></span>
+    <span class="pbtn full">Erledigt</span>
+  </div>
+  <div class="locked st"><span>Deine Einarbeitung · 5 Schritte</span><svg class="ico"><use href="#i-lock"/></svg></div>
+  <div class="tabs"><span><svg class="ico"><use href="#i-sun"/></svg>Heute</span><span><svg class="ico"><use href="#i-users"/></svg>Kontakte</span><span><svg class="ico"><use href="#i-link"/></svg>Mein Link</span><span class="on"><svg class="ico"><use href="#i-start"/></svg>Startklar</span><span><svg class="ico"><use href="#i-more"/></svg>Mehr</span></div></div></div></div></div>
+      </article>
+      <article class="scard" id="s-team" data-slide>
+        <div class="body">
+          <div class="num"><b>05</b><em>Team · für Mentorinnen</em></div>
+          <h3>Wer braucht Hilfe, ohne nachzufragen</h3>
+          <p>Eine Liste, kein Organigramm. Sortiert nach Unterstützungsbedarf, nicht nach Leistung. Pro Partnerin: Phase, Schritt, letzte Aktivität und ein Signal. Die Mentorin legt mit einem Tippen eine Aufgabe an. Die Kontakte ihrer Partnerinnen sieht sie nie.</p>
+          <div class="say">
+            <span class="label">Im Termin sage ich</span>
+            <ul><li>„Heute fragt ihr in Telegram nach, wer wo steht. Hier seht ihr es.“</li><li>„Keine Rangliste. Ganz oben steht, wer gerade Hilfe braucht.“</li><li>„Die Mentorin sieht, dass jemand vorankommt. Nicht, mit wem sie spricht.“</li></ul>
+          </div>
+        </div>
+        <div class="stage"><div class="phone "><div class="screen"><div class="sb"><span>9:41</span><span class="notch"></span><span class="ic"><i></i></span></div><div class="app">
+  <div class="top"><span class="ttl">Mein Team</span></div>
+  <p class="ctx">Sortiert nach Unterstützungsbedarf</p>
+  <div class="prow st"><div class="h"><b>Claudia S.</b><span class="sig warn pulse"><span class="dot warn"></span>hängt fest</span></div><small>Startklar · Schritt 2 von 10 · seit 9 Tagen</small><div class="act"><span class="pbtn">Aufgabe anlegen</span><span class="plink">Nachricht vorschlagen</span></div></div>
+  <div class="prow st"><div class="h"><b>Petra H.</b><span class="sig idle"><span class="dot idle"></span>still seit 4 Tagen</span></div><small>Deine Einarbeitung · 2 von 5</small></div>
+  <div class="prow st"><div class="h"><b>Melanie R.</b><span class="sig ok"><span class="dot ok"></span>läuft</span></div><small>Startklar · 7 von 10 · 3 neue Kontakte</small></div>
+  <div class="prow st"><div class="h"><b>Sabrina T.</b><span class="sig ok"><span class="dot ok"></span>läuft</span></div><small>Werde Profi · 1 von 3</small></div>
+  <div class="privacy st"><svg class="ico"><use href="#i-lock"/></svg><span>Die Kontakte deiner Partnerinnen siehst du nicht. Nur, ob sie vorankommen.</span></div>
+  <div class="tabs"><span><svg class="ico"><use href="#i-sun"/></svg>Heute</span><span><svg class="ico"><use href="#i-users"/></svg>Kontakte</span><span><svg class="ico"><use href="#i-link"/></svg>Mein Link</span><span><svg class="ico"><use href="#i-start"/></svg>Startklar</span><span class="on"><svg class="ico"><use href="#i-more"/></svg>Mehr</span></div></div></div></div></div>
+      </article>
+      <article class="scard" id="s-hub" data-slide>
+        <div class="body">
+          <div class="num"><b>06</b><em>Hub · die Verbindung</em></div>
+          <h3>Alles, was es schon gibt. Ein Tippen statt Suchen.</h3>
+          <p>Kacheln auf eure bestehenden Bereiche, jede mit einem Satz, was dort zu finden ist. Kein Nachbau, keine doppelte Pflege. Ändert sich eine Adresse im WordPress, passt die Teamleitung die Kachel selbst an.</p>
+          <div class="say">
+            <span class="label">Im Termin sage ich</span>
+            <ul><li>„Eure Academy bleibt eure Academy. Der Hub zeigt nur den Weg dorthin.“</li><li>„129 Seiten werden zu einer Handvoll Kacheln, die man wirklich braucht.“</li></ul>
+          </div>
+        </div>
+        <div class="stage"><div class="phone "><div class="screen"><div class="sb"><span>9:41</span><span class="notch"></span><span class="ic"><i></i></span></div><div class="app">
+  <div class="top"><span class="ttl">Hub</span></div>
+  <p class="ctx">Alles aus eurem Teambereich, an einer Stelle.</p>
+  <div class="hubgrid">
+    <div class="tile st"><svg class="ico"><use href="#i-book"/></svg><b>Academy</b><small>46 Lektionen im Tutor LMS</small></div>
+    <div class="tile st"><svg class="ico"><use href="#i-heart"/></svg><b>Vital Coach</b><small>Die Weiterbildung</small></div>
+    <div class="tile st"><svg class="ico"><use href="#i-brief"/></svg><b>Network Marketing Experte</b><small>Die Ausbildung</small></div>
+    <div class="tile st"><svg class="ico"><use href="#i-cal"/></svg><b>Teamkalender</b><small>Termine und Tickets</small></div>
+    <div class="tile st"><svg class="ico"><use href="#i-present"/></svg><b>Präsentationen</b><small>Zum Zeigen im Gespräch</small></div>
+    <div class="tile st"><svg class="ico"><use href="#i-print"/></svg><b>Drucksachen</b><small>Flyer und Starter-Unterlagen</small></div>
+  </div>
+  <div class="tabs"><span><svg class="ico"><use href="#i-sun"/></svg>Heute</span><span><svg class="ico"><use href="#i-users"/></svg>Kontakte</span><span><svg class="ico"><use href="#i-link"/></svg>Mein Link</span><span><svg class="ico"><use href="#i-start"/></svg>Startklar</span><span class="on"><svg class="ico"><use href="#i-more"/></svg>Mehr</span></div></div></div></div></div>
+      </article>
+      </div>
+    </div>
+    <p class="wrap hs-hint label muted">Weiterscrollen oder wischen</p>
+  </div>
+</section>
+
+<!-- So funktioniert's -->
+<section class="dark how" id="kreislauf" data-slide>
+  <div class="wrap">
+    <div class="sechead rv">
+      <span class="label">So funktioniert's</span>
+      <div>
+        <h2>Vom geteilten Link zur Aufgabe am nächsten Morgen.</h2>
+        <p class="lede">An dieser Stelle unterscheidet sich der Hub von jedem normalen CRM. Ihr macht diesen Ablauf heute schon, nur von Hand und über zwei getrennte Fremdtools.</p>
+      </div>
+    </div>
+    <div class="how-grid">
+      <ol class="how-steps"><li class="how-step" data-sub data-i="0"><span class="hn">1</span><div><b>Die Partnerin teilt ihren Link</b><p>Per WhatsApp, Instagram oder persönlich. Eine Seite, ihr Name, ihre Geschichte.</p><small>Ein Tippen auf „Über WhatsApp teilen“. Der Text ist vorbefüllt, die Partnerin sendet selbst.</small></div></li><li class="how-step" data-sub data-i="1"><span class="hn">2</span><div><b>Die Interessentin liest</b><p>Sie scrollt durch Geschichte, Video und Konzept, in ihrem Tempo.</p><small>Gezählt wird nur: geöffnet, wie weit gelesen, was geklickt. Ohne Name, IP oder Cookie.</small></div></li><li class="how-step" data-sub data-i="2"><span class="hn">3</span><div><b>Sie bewertet von 1 bis 10</b><p>Genau die Frage, die ihr heute schon stellt. Dazu ihre offene Frage.</p><small>Ein Pflichtbaustein, den keine Partnerin abschalten kann.</small></div></li><li class="how-step" data-sub data-i="3"><span class="hn">4</span><div><b>Der Kontakt entsteht automatisch</b><p>Beim richtigen Partner, mit Quelle, Bewertung und Frage als erster Notiz.</p><small>Gleichzeitig entsteht die Aufgabe „Bei Maria K. melden“ für morgen.</small></div></li><li class="how-step" data-sub data-i="4"><span class="hn">5</span><div><b>Morgen früh steht es unter Heute</b><p>„Maria K. hat mit 7 von 10 bewertet und fragt nach dem Zeitaufwand.“ Ein Tippen, Antwort raus.</p><small>Kein Abtippen, kein Suchen im Chatverlauf. Der Kreis ist geschlossen.</small></div></li></ol>
+      <div class="how-stick">
+        <div class="how-dev">
+          <div class="phone how-phone"><div class="screen"><div class="sb"><span>9:41</span><span class="notch"></span><span class="ic"><i></i></span></div><div class="how-screens"><div class="how-screen" data-i="0">
+  <div class="chat-top"><span class="cav">MK</span><div><b>Maria K.</b><small>online</small></div></div>
+  <div class="chat">
+    <div class="bub in a1">Hey Nicole, du hattest von deinem Team erzählt. Magst du mir mehr zeigen?</div>
+    <div class="bub out a2">Klar! Hier ist meine Seite, schau in Ruhe rein:</div>
+    <div class="bub out linkcard a3"><span class="lc-img"></span><b>Nicole · Team No Limits</b><small>teamnolimits.de/p/nicole</small></div>
+    <div class="ticks a4">Gesendet ✓✓</div>
+  </div>
+  <div class="chat-bar"><span>Nachricht</span><svg class="ico"><use href="#i-send"/></svg></div>
+</div>
+<div class="how-screen web" data-i="1">
+  <div class="scrollpage"><div class="hero-img"><span class="avatar"></span></div>
+  <div class="wbody">
+    <span class="sec">Nicole · Team No Limits</span>
+    <h4>Meine Geschichte, und warum ich nebenher angefangen habe.</h4>
+    <div class="video"><svg class="ico"><use href="#i-play"/></svg></div>
+    <div class="fb">
+      <b>Wie interessant findest du das?</b>
+      <small style="color:var(--p-soft);font-size:11px">1 = gar nicht · 10 = sehr</small>
+      <div class="scale"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i class="on">7</i><i>8</i><i>9</i><i>10</i></div>
+      <span class="input">Deine Fragen …</span>
+      <span class="pbtn dark full">Absenden</span>
+    </div>
+    <p class="legal">Keine IP-Speicherung, keine Cookies. Persönliche Seite einer selbstständigen Vertriebspartnerin, keine offizielle Seite von Forever Living Products.</p>
+  </div></div>
+  <div class="toast dark a2"><svg class="ico"><use href="#i-lock"/></svg>Anonym gezählt: geöffnet · 80 % gelesen</div>
+</div>
+<div class="how-screen web" data-i="2">
+  <div class="rateq">
+    <span class="sec">Deine Rückmeldung an Nicole</span>
+    <b class="rq">Wie interessant findest du das?</b>
+    <small>1 = gar nicht · 10 = sehr</small>
+    <div class="scale seq"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i class="hit">7</i><i>8</i><i>9</i><i>10</i></div>
+    <span class="input typed"><span class="tw">Wie viel Zeit brauche ich am Tag?</span></span>
+    <span class="input">Maria K. · WhatsApp</span>
+    <span class="pbtn dark full press">Absenden</span>
+    <div class="thanks a5"><svg class="ico"><use href="#i-check"/></svg>Danke! Nicole meldet sich bei dir.</div>
+  </div>
+</div>
+<div class="how-screen" data-i="3">
+  <div class="app">
+    <div class="toast a1"><svg class="ico"><use href="#i-bell"/></svg>Neue Rückmeldung von Maria K.</div>
+    <div class="top"><span class="ttl">Kontakte</span></div>
+    <div class="chips"><span class="chip">Alle 15</span><span class="chip">Überfällig 2</span><span class="chip on">Neu 4</span></div>
+    <div class="clist">
+      <div class="crow newrow a2"><span class="dot"></span><div><b>Maria K.</b><small>gerade eben · über Mein Link</small></div><span class="st2">7 von 10</span></div>
+      <div class="crow"><span class="dot"></span><div><b>Tanja R.</b><small>heute · über Mein Link</small></div><span class="st2">Neu</span></div>
+      <div class="crow"><span class="dot warn"></span><div><b>Sandra M.</b><small>vor 6 Tagen</small></div><span class="st2">Infos geteilt</span></div>
+    </div>
+    <div class="note a3"><span class="sec">Erste Notiz, automatisch</span><p>„Wie viel Zeit brauche ich am Tag?“</p></div>
+    <div class="note a4"><span class="sec">Aufgabe angelegt</span><p>Bei Maria K. melden · <b>morgen</b></p></div>
+  </div>
+</div>
+<div class="how-screen" data-i="4">
+  <div class="app">
+    <div class="top"><div class="greet">Guten Morgen, Nicole</div></div>
+    <p class="ctx">Am nächsten Morgen, 7:30 Uhr</p>
+    <p class="sec">Deine nächsten Schritte</p>
+    <div class="card a1 glow"><span class="tag"><span class="dot"></span>Neue Rückmeldung</span><p class="txt">Maria K. hat mit 7 von 10 bewertet und fragt nach dem Zeitaufwand.</p><div class="act"><span class="pbtn press2">Antworten</span><span class="plink">Später</span></div></div>
+    <div class="card a2"><span class="tag"><span class="dot warn"></span>Überfällig</span><p class="txt">Sandra M. wartet seit 6 Tagen auf deine Antwort.</p><div class="act"><span class="pbtn">Nachfassen</span></div></div>
+    <div class="tabs"><span class="on"><svg class="ico"><use href="#i-sun"/></svg>Heute</span><span><svg class="ico"><use href="#i-users"/></svg>Kontakte</span><span><svg class="ico"><use href="#i-link"/></svg>Mein Link</span><span><svg class="ico"><use href="#i-start"/></svg>Startklar</span><span><svg class="ico"><use href="#i-more"/></svg>Mehr</span></div>
+  </div>
+</div></div></div></div>
+          <div class="how-meter"><span class="label how-cap">Schritt 1 von 5</span><i><b></b></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="loopnote rv">
+      <p>Ein Kontaktbuch, das sich nicht selbst füllt, bleibt leer. Darum gehört Mein Link in die erste Ausbaustufe, nicht in eine spätere.</p>
+      <a class="btn ghost" href="#s-link">Zurück zu Mein Link</a>
+    </div>
+  </div>
+</section>
+
+<!-- Beleg -->
+<section id="beleg" data-slide>
+  <div class="wrap proof">
+    <div class="tiles rv">
+      <img src="assets/reels/R01-SechsMonate.jpg" alt="Reel R01: Ich hab die ersten 6 Monate keinen Cent verdient.">
+      <img src="assets/reels/R04-TagEins.jpg" alt="Reel R04: Das kriegt jeder neue Partner in den ersten 10 Minuten.">
+      <img src="assets/reels/R07-EineFrage.jpg" alt="Reel R07: Wenn du ehrlich antwortest, weißt du Bescheid.">
+      <img src="assets/reels/B03-Dienstag.jpg" alt="Reel B03: Ich mag Dienstag lieber als Freitag.">
+      <img src="assets/reels/R12-WieVieleNachrichten.jpg" alt="Reel R12: Rate mal, wie viele Nachrichten ich für den ersten Partner gebraucht hab.">
+      <span class="cap plate label">24 Reels · fertig vertont</span>
+    </div>
+    <div class="rv">
+      <span class="label muted">Beleg statt Versprechen</span>
+      <h2 style="margin-top:18px">Geliefert, bevor der Vertrag steht.</h2>
+      <p class="lede" style="margin-top:20px">Zwei Serien Instagram-Reels im Hochformat, vertont, im selben Designsystem wie dieses Angebot. Ohne Einkommenszahlen und ohne Produktversprechen.</p>
+      <ul>
+        <li><b>12</b><span>Reels über Ehrlichkeit statt Hype. Für Menschen, die schon einmal allein gelassen wurden.</span></li>
+        <li><b>12</b><span>Beiläufige Reels über den Alltag mit 60 bis 90 Minuten am Tag.</span></li>
+        <li><b>0</b><span>Heilaussagen, Einkommensangaben oder Autos.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Grenzen -->
+<section class="soft" id="grenzen" data-slide>
+  <div class="wrap">
+    <div class="sechead rv">
+      <span class="label">Wichtig zu wissen</span>
+      <div>
+        <h2>Was der Partner Hub bewusst nicht tut.</h2>
+        <p class="lede">Network Marketing ist rechtlich empfindlich. Diese Grenzen sind im System eingebaut, nicht nur im Vertrag vermerkt.</p>
+      </div>
+    </div>
+    <div class="limits rv" style="background:var(--paper)">
+      <div>Keine Einkommensversprechen, Verdienstbeispiele oder Provisionsrechner, auch nicht als Beispiel</div>
+      <div>Keine Gesundheits- oder Heilaussagen zu Produkten</div>
+      <div>Keine automatisierten Nachrichten an Kontakte</div>
+      <div>Keine Nachbildung der Forever-Downline oder von Vergütungsdaten</div>
+      <div>Kein Zugriff einer Mentorin auf die Kontakte ihrer Partnerinnen</div>
+      <div>Keine Ranglisten unter den Partnerinnen</div>
+    </div>
+    <p class="fine">Freigegebene Textbausteine pflegt ausschließlich die Teamleitung. Partnerinnen können sie ein- und ausschalten, aber nicht umschreiben.</p>
+  </div>
+</section>
+
+<!-- Investition -->
+<section id="investition" data-slide>
+  <div class="wrap">
+    <div class="sechead rv">
+      <span class="label">Die Investition</span>
+      <div>
+        <h2>Ein Festpreis. Drei Zahlungen. Keine für etwas, das ihr noch nicht gesehen habt.</h2>
+      </div>
+    </div>
+    <div class="rv">
+      <div class="price">
+        <div class="big">
+          <span class="label">Partner Hub · Festpreis</span>
+          <div class="amount">8.900<small>€ netto</small></div>
+          <p>Konzept, Analyse, Entwicklung, Einrichtung und Livegang. Keine Stundenabrechnung, keine Nachforderung. Jede Rate wird erst fällig, wenn ihr den jeweiligen Stand abgenommen habt.</p>
+        </div>
+        <div class="rates">
+          <div class="rate"><span class="k">1</span><div class="w">Bei Auftrag<span>Projektstart, Einrichtung, euer eigener Zugang.</span></div><div class="v">3.560 €<small>40 %</small></div></div>
+          <div class="rate"><span class="k">2</span><div class="w">Zur Mitte<span>Eure Texte, euer Onboarding, euer Logo, eure Bausteine sind drin.</span></div><div class="v">2.670 €<small>30 %</small></div></div>
+          <div class="rate"><span class="k">3</span><div class="w">Bei Fertigstellung<span>Getestet mit euren Partnerinnen, Schulung gehalten, übergeben.</span></div><div class="v">2.670 €<small>30 %</small></div></div>
+        </div>
+      </div>
+      <div class="compare"><span>Eine Agentur rechnet ein Projekt dieses Umfangs üblicherweise ab mit</span><b>25.000 – 40.000 €</b></div>
+      <p class="fine">Danach Betrieb und Support für 249 € im Monat, die ersten drei Monate kostenfrei, monatlich kündbar. Alle Preise netto zzgl. 19 % MwSt.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Abschluss -->
+<section class="dark" id="weiter" data-slide>
+  <div class="wrap close">
+    <div class="rv">
+      <span class="label">Der nächste Schritt</span>
+      <h2 style="margin-top:18px">Unterschrift heute. Livegang in sechs Wochen.</h2>
+      <p class="lede" style="margin-top:20px">Das vollständige Angebot mit Leistungsumfang, Betrieb, Beitragsmodell und Zeitplan liegt auf einer eigenen Seite, druckbar mit Unterschriftsfeld.</p>
+      <div class="btnrow" style="margin-top:32px">
+        <a class="btn yellow" href="angebot.html">Zum Angebot</a>
+        <a class="btn ghost" href="#start">Zurück zum Anfang</a>
+      </div>
+    </div>
+    <ol class="steps3 rv">
+      <li><b>Heute</b><span>Auftrag unterschreiben. Rate 1.</span></li>
+      <li><b>Woche 1</b><span>90 Minuten Auftakt: welche eurer Inhalte zuerst hinein.</span></li>
+      <li><b>Woche 4</b><span>Ihr nehmt den Zwischenstand ab. Rate 2.</span></li>
+      <li><b>Woche 5</b><span>Testlauf mit fünf bis zehn Partnerinnen.</span></li>
+      <li><b>Woche 6</b><span>Livegang und Schulung. Rate 3.</span></li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>Team No Limits Partner Hub · Yves Unser · yves.unser@me.com</span>
+    <span>Eigenständige Plattform von Team No Limits, keine offizielle Anwendung von Forever Living Products.</span>
+  </div>
+</footer>
+
+<nav class="deck" aria-label="Präsentation">
+  <button class="prev" type="button" aria-label="Vorheriger Abschnitt">←</button>
+  <span>01 / 15</span>
+  <button class="next" type="button" aria-label="Nächster Abschnitt">→</button>
+</nav>
+
+<script src="assets/pitch.js" defer></script>
+</body>
+</html>
