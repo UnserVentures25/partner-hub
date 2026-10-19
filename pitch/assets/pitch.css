@@ -656,3 +656,9 @@ footer.site .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:
   .how-stick{position:static}
   .how .how-screen[data-i="4"]{opacity:1;transform:none}
 }
+
+/* Preisaufteilung im gelben Feld */
+.parts{border-top:1px solid var(--black)}
+.parts div{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid rgba(0,0,0,.35);font-size:15px}
+.parts b{font:700 18px var(--serif);white-space:nowrap}
+.price .big p.why{font-size:14px;border-left:3px solid var(--black);padding-left:12px}
